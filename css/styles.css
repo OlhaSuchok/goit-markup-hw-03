@@ -276,3 +276,164 @@ body {
 .hide {
     display: none;
 }
+
+/* Block */
+
+.box {
+    position: absolute;
+    width: 1600px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 5px solid rgb(71, 135, 255);
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.site-nav,
+.auth-nav {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+.auth-nav {
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
+.studio {
+    margin-right: 50px;
+}
+
+.portfolio  {
+    margin-right: 50px;
+}
+
+.link-mail {
+    margin-right: 50px;
+}
+
+.section-hero .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.button-hero {
+    width: 216px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.section-criterion.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-criterion .flex {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.list.flex li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.function-section .flex {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.heading-text {
+    margin-bottom: 0;
+}
+
+
+.function-section.container {
+    padding-top: 0;
+    padding-bottom: 94px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.caption {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.list.flex {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card,
+.card-caption {
+    display: block;
+}
+
+.section-command .flex {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-command.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 94px;
+}
+
+.caption-text,
+.caption-list {
+    text-align: center;
+    padding-top: 0;
+}
+
+.card-caption {
+    margin-bottom: 30px;
+}
+
+.caption-list {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.caption-text {
+    margin-top: 0;
+    margin-bottom: 124px;
+}
