@@ -191,8 +191,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
@@ -328,22 +326,18 @@ body {
 
 /* Hero */
 .section-hero .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 252px;
     text-align: center;
 }
 
 .title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 .button-hero {
     width: 216px;
     height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
+    padding: 6px 28px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
