@@ -348,7 +348,7 @@ body {
 }
 
 /* Criterions */
-.section-criterion.container {
+.section-criterion {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
