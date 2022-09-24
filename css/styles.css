@@ -15,7 +15,7 @@ body {
     font-family: var(--main-font);
 }
 
-/* Color */
+/* COLOR */
 .logo {
     color: #000000;
 } 
@@ -74,9 +74,12 @@ body {
 }
 
 .section-criterion,
-.function-section,
+.function-section {
+    background-color: var(--accent-color);
+}
+
 .project-section {
-    background-color: #F5F5F5;
+    background-color: var(--accent-color);
 }
 
 .section-command,
@@ -200,6 +203,7 @@ body {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    border-style: none;
 }
 
 /* Navigation */
@@ -261,6 +265,7 @@ body {
 .button:focus {
     color: var(--accent-color);
     background-color: var(--nav-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button,
@@ -277,8 +282,7 @@ body {
     display: none;
 }
 
-/* Block */
-
+/* Display */
 .box {
     position: absolute;
     width: 1600px;
@@ -291,42 +295,47 @@ body {
     outline: 5px solid rgb(71, 135, 255);
 }
 
+/* Header */
 .header .flex {
     display: flex;
     align-items: center;
-    height: 80px;
-}
-
-.site-nav,
-.auth-nav {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0; 
-}
-
-.auth-nav {
-    margin-left: auto;
 }
 
 .logo {
-    margin-right: 93px;
+    padding: 0;
+    margin: 24px 93px 25px 0;
 }
 
-.studio {
+.list.site-nav {
+    display: flex;
+    padding: 0;
+    margin: 32px 344px 32px 0;
+}
+
+.list.auth-nav {
+    display: flex;
+    padding: 0;
+    margin: 32px 0;
+}
+
+.list.site-nav li:not(:last-child) {
     margin-right: 50px;
 }
 
-.portfolio  {
-    margin-right: 50px;
+.list.auth-nav li:not(:last-child) {
+    margin-right: 50px; 
 }
 
-.link-mail {
-    margin-right: 50px;
-}
-
+/* Hero */
 .section-hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .button-hero {
@@ -335,16 +344,11 @@ body {
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
-    text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
-.title {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
+/* Criterions */
 .section-criterion.container {
     display: flex;
     justify-content: space-between;
@@ -364,10 +368,15 @@ body {
     margin-right: 30px;
 }
 
+.function-section.container {
+    padding-bottom: 94px;
+}
+
 .function-section .flex {
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
 }
 
 .heading {
@@ -379,15 +388,6 @@ body {
 .heading-text {
     margin-bottom: 0;
 }
-
-
-.function-section.container {
-    padding-top: 0;
-    padding-bottom: 94px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
 
 .caption {
     margin-top: 0;
@@ -402,6 +402,10 @@ body {
 .card,
 .card-caption {
     display: block;
+}
+
+.card {
+    width: 370px;
 }
 
 .section-command .flex {
@@ -437,3 +441,89 @@ body {
     margin-top: 0;
     margin-bottom: 124px;
 }
+
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.list.footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.list.footer li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.project-section {
+    display: flex;
+    margin-top: 94;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 94px;
+    padding-bottom: 94px;
+} 
+
+.project-section .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+} 
+
+.button {
+    width: 125px;
+    height: 38px;
+    border-radius: 4px;
+}
+
+.project-section .list li:not(:last-child) {
+margin-right: 8px;
+}
+
+.list.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    display: block;
+    width: 370px;
+}
+
+.list.projects li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 60px) / 3); 
+}
+
+.list.projects li:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.list.projects li:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+
