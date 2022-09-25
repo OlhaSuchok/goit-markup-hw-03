@@ -454,10 +454,10 @@ border-radius: 0px 0px 4px 4px;
 /* Projects */
 .list.button {
     display: flex;
-    margin-bottom: 50px;
     align-items: center;
     margin-left: 312px;
     margin-right: 313px;
+    margin-bottom: 50px;
 }
 
 .button {
