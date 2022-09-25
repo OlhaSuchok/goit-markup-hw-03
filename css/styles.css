@@ -83,6 +83,7 @@ body {
 }
 
 .section-command,
+.container.color,
 .button {
   background-color: #f5f4fa;
 }
@@ -291,7 +292,12 @@ body {
   width: 1200px;
   margin: auto;
   padding: 0 15px;
-  outline: 5px solid rgb(71, 135, 255);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 5px solid rgb(71, 135, 255);
 }
 
 /* Header */
@@ -348,15 +354,15 @@ body {
 }
 
 /* Criterions */
-.section-criterion {
+.section-criterion .container {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.section-criterion .flex {
+.flex.criterion {
   display: flex;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
 }
 
 .heading {
@@ -374,11 +380,11 @@ body {
 }
 
 /* Functions */
-.function-section {
-  padding-bottom: 94px;
+.section.function {
+    padding-top: 0;
 }
 
-.function-section .flex {
+.flex.function {
   display: flex;
   padding-left: 0;
   padding-right: 0;
@@ -398,19 +404,14 @@ body {
 }
 
 /* Command */
-.section-command.container {
-  padding-top: 94px;
-}
-
 .section-command .flex {
   display: flex;
   padding-left: 0;
-  padding-right: 0x;
+  padding-right: 0;
 }
 
 .section-command .list.flex {
     margin: 0;
-    padding-bottom: 94px;
 }
 
 .caption-text,
@@ -437,11 +438,9 @@ body {
   display: block;
 }
 
-.border-picture {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+.border-card {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
@@ -465,24 +464,12 @@ body {
 }
 
 /* Projects */
-.project-section {
+.list.button {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 94;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.project-section .list {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+  align-items: center;
   padding-left: 0;
-  padding-right: 0;
+  margin: 0 auto 50px auto;
 }
 
 .button {
@@ -493,20 +480,16 @@ body {
   padding-bottom: 6px;
 }
 
-.project-section .list li:not(:last-child) {
-  margin-right: 30px;
+.list.button li:not(:last-child) {
+    margin-right: 8px;
 }
 
 .list.projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   padding-left: 0;
-  padding-right: 0;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .picture {
@@ -520,17 +503,18 @@ body {
   margin-bottom: 30px;
 }
 
-.list.projects li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .list.projects li:nth-child(3n) {
   margin-right: 0;
 }
 
-.border-card {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-margin-bottom: ;
+.list.projects li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.border-picture {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
