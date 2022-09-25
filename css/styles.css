@@ -301,7 +301,7 @@ border-radius: 4px;
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 5px solid rgb(71, 135, 255);
+    /* outline: 5px solid rgb(71, 135, 255); */
 }
 
 h1, h2, h3, p {
