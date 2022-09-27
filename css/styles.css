@@ -302,6 +302,7 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  outline: 3px solid #2196f3;
 }
 
 h1, h2, h3, p {
@@ -317,13 +318,17 @@ ul {
 }
 
 /* Header */
-.header {
+.header.section {
   border-bottom: 1px solid #ECECEC;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header .container {
   display: flex;
   align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .logo {
@@ -354,8 +359,7 @@ ul {
 }
 
 /* Hero */
-.section-hero .container {
-  /* padding: 200px 252px; */
+.section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -394,7 +398,7 @@ ul {
 }
 
 /* Functions */
-.section.function {
+.function-section {
   padding-top: 0;
 }
 
@@ -412,8 +416,8 @@ ul {
 }
 
 /* Command */
-.section-command .container  {
-  padding-bottom: 94px;
+.section-command {
+  padding-top: 0;
 }
 
 .section-command .flex {
@@ -447,7 +451,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
-.footer .container {
+.footer.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
