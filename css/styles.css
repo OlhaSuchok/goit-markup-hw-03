@@ -12,6 +12,7 @@
 
 /* Body */
 body {
+  margin: 0;
   color: var(--main-color);
   font-family: var(--main-font);
 }
@@ -289,10 +290,6 @@ button-project {
 }
 
 /* Display */
-body {
-  margin: 0;
-}
-
 .container {
   width: 1200px;
   margin: auto;
@@ -319,15 +316,11 @@ ul {
 /* Header */
 .header.section {
   border-bottom: 1px solid #ECECEC;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .logo {
