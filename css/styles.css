@@ -290,7 +290,7 @@ button-project {
 
 /* Display */
 body {
-  width: 1600px;
+  margin: 0;
 }
 
 .container {
@@ -415,10 +415,6 @@ ul {
 }
 
 /* Command */
-.section-command {
-  padding-top: 0;
-}
-
 .section-command .flex {
   display: flex;
 }
